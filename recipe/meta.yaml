@@ -29,10 +29,14 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - pytest
   imports:
     - atsas_pipelines
     - atsas_pipelines.utils
     - atsas_pipelines.run_calc
+  commands:
+    - pytest --pyargs atsas_pipelines.tests
 
 about:
   home: https://github.com/mrakitin/atsas-pipelines
