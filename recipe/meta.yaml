@@ -1,0 +1,44 @@
+{% set name = "atsas-pipelines" %}
+{% set version = "0.0.1" %}
+{% set sha256 = "44f428295ee34b8a93b25bbead84ccc5f492889a3a330fd138b5f81c5106e4be" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python >=3.6
+    - pip
+  run:
+    - python >=3.6
+    - dask-jobqueue
+    - distributed
+    - matplotlib
+    - numpy
+    - pandas
+    - scipy
+
+test:
+  imports:
+    - atsas_pipelines
+    - atsas_pipelines.utils
+    - atsas_pipelines.run_calc
+
+about:
+  home: https://github.com/mrakitin/atsas-pipelines
+  license: BSD (3-clause)
+  license_family: BSD
+  license_file: LICENSE
+  summary: ATSAS pipelines for the NSLS-II LIX beamline
+  doc_url: https://mrakitin.github.io/atsas-pipelines
+  dev_url: https://github.com/mrakitin/atsas-pipelines
