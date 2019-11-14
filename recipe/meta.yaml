@@ -33,8 +33,9 @@ test:
     - pytest
   imports:
     - atsas_pipelines
+    - atsas_pipelines.dask
+    - atsas_pipelines.run
     - atsas_pipelines.utils
-    - atsas_pipelines.run_calc
   commands:
     - pytest --pyargs atsas_pipelines.tests
 
