@@ -1,6 +1,6 @@
 {% set name = "atsas-pipelines" %}
-{% set version = "0.0.2" %}
-{% set sha256 = "ccea2d27101202cd2d3fb2287dc7d2289b2b81d6bfc130704d5fa93a99156225" %}
+{% set version = "0.0.3" %}
+{% set sha256 = "4faa5720ebf109866597c5c161f92f6a3c276c528e7f5f90891af71e2483011b" %}
 
 package:
   name: {{ name|lower }}
