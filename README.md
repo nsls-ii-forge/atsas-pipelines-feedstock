@@ -1,7 +1,7 @@
 About atsas-pipelines
 =====================
 
-Home: https://github.com/mrakitin/atsas-pipelines
+Home: https://github.com/NSLS-II-LIX/atsas-pipelines
 
 Package license: BSD (3-clause)
 
