@@ -5,11 +5,13 @@ Home: https://github.com/NSLS-II-LIX/atsas-pipelines
 
 Package license: BSD (3-clause)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/atsas-pipelines-feedstock/blob/master/LICENSE.txt)
 
 Summary: ATSAS pipelines for the NSLS-II LIX beamline
 
+Development: https://github.com/NSLS-II-LIX/atsas-pipelines
 
+Documentation: https://mrakitin.github.io/atsas-pipelines
 
 Current build status
 ====================
